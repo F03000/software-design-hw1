@@ -49,7 +49,7 @@ public class LRUCache<K, V> {
     public boolean contains(K key, V value) {
         assertNotNull(key);
         assertNotNull(value);
-        return orderedKeyList.contains(key);
+        return keyValueMap.get(key) == value;
     }
 
     public int getCapacity() {
