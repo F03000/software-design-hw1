@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 
 public class LRUCache<K, V> {
-    private Map<K, V> keyValueMap;
-    private List<K> orderedKeyList;
-    private int capacity;
+    private final Map<K, V> keyValueMap;
+    private final List<K> orderedKeyList;
+    private final int capacity;
 
     public LRUCache(int capacity) {
         assert (capacity > 0);
